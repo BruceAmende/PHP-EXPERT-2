@@ -2,21 +2,12 @@
     
     include('include/header.php');
     require 'db.conn/db.conn.php';
-
-
-
-
-
-$sql = "SELECT * FROM reparatie WHERE id =:id";
-$statement = $db_conn->prepare($sql); 
-$statement->bindParam(":id", $_GET['id']);
-$statement->execute();
-$database_gegevens = $statement->fetch(PDO::FETCH_ASSOC);
-
-
-?>
-
-
+    $sql = "SELECT * FROM reparatie WHERE id =:id";
+    $statement = $db_conn->prepare($sql); 
+    $statement->bindParam(":id", $_GET['id']);
+    $statement->execute();
+    $database_gegevens = $statement->fetch(PDO::FETCH_ASSOC);
+    ?>
 <html>
 <body>
 
@@ -41,3 +32,11 @@ $database_gegevens = $statement->fetch(PDO::FETCH_ASSOC);
 
 </body>
 </html>
+
+
+
+
+
+
+
+

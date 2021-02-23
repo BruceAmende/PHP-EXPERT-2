@@ -1,7 +1,6 @@
 <?php
-    include('include/header.php');
-    
-    ?>
+include('include/header.php');
+ ?>
 
 
 <!DOCTYPE html>
@@ -31,12 +30,13 @@
 				<input type="password" minlength="8" name="password" placeholder="Wachtwoord" id="password" required>
 				<input type="submit" value="Login">
 			</form>
-                <div class='tekstB'>
-				<p>Nog geen account?</p>
-				<a href="registreer.php">Registreer hier!</a>
-				<p>Medewerker?</p>
-				<a href="Mlogin.php">Log hier in!</a></div>
 		</div>
+                <div class="d-flex justify-content-around">
+				
+				<a  class="btn btn-success" href="registreer.php">Registreer</a>
+				
+				<a  class="btn btn-success" href="Mlogin.php">Medewerker Login</a>
+				</div>
 	</body>
 </html>
 
